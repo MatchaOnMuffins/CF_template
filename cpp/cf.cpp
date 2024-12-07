@@ -28,7 +28,9 @@ ostream &operator<<(ostream &os, const T_container &v) {
 
 #define V vector
 #define VI V<int>
+#define VI(a) V<int>(a) 
 #define VVI V<V<int>>
+#define VVI(a,b) V<V<int>>(a, V<int>(b))
 #define UMAP unordered_map
 #define USET unordered_set
 #define PQ priority_queue
@@ -95,6 +97,12 @@ const int MAX_N = 1e5 + 5;
 const LL MOD = 1e9 + 7;
 const LL INF = 1e9;
 const LD EPS = 1e-9;
+
+// arr loading
+template <typename T> void load(V<T> &v) {
+  trav(x, v) cin >> x;
+}
+
 
 void solve() {}
 
