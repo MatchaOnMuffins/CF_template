@@ -1,6 +1,5 @@
 #ifndef __clang__
-#pragma GCC optimize("Ofast")
-#pragma GCC optimize("unroll-loops")
+#pragma GCC optimize("O3")
 #include <bits/stdc++.h>
 #else 
 #include <algorithm>
